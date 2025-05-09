@@ -42,6 +42,7 @@ test = { cmd = [
   "test-data",
 ] }
 snakemake = { cmd = "cd $INIT_CWD && snakemake -s $PIXI_PROJECT_ROOT/workflow/Snakefile" }
+snakemake_dry = { cmd = "cd $INIT_CWD && snakemake --dry-run -s $PIXI_PROJECT_ROOT/workflow/Snakefile" }
 
 
 [dependencies]
