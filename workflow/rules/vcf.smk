@@ -14,8 +14,8 @@ rule deepvariant_chunk:
     threads: 8
     resources:
         mem_mb=32 * 1024,
-    singularity:
-        f"docker://google/deepvariant:{BIN_VERSION}"
+    conda:
+        CONDA_DEEPVAR
     params:
         model_type="PACBIO",  # WGS, WES, PACBIO, ONT_R104, HYBRID_PACBIO_ILLUMINA
         bin_version=BIN_VERSION,
