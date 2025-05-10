@@ -30,6 +30,7 @@ else:
 
 
 CONDA = "../envs/env.yml"
+CONDA_DEEPVAR = "../envs/env2.yml" 
 # required
 HIFI_BAM = config.pop("hifi_bam")
 SAMPLE = config.pop("sample")
