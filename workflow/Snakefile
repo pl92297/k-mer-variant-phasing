@@ -30,7 +30,8 @@ else:
 
 
 CONDA = "../envs/env.yml"
-CONDA_DEEPVAR = "../envs/env2.yml" 
+# Run pre-installed deepvariant conda env (problem running with singularity)
+CONDA_DEEPVAR = "../envs/deepvariant" 
 # required
 HIFI_BAM = config.pop("hifi_bam")
 SAMPLE = config.pop("sample")
