@@ -77,6 +77,11 @@ if DEEPVARIANT:
         input:
             rules.deepvariant.input,
 
+elif ALIGN:
+    rule all:
+        input:
+            rules.pbmm2.input,
+            
 elif NO_PARENTAL:
 
     rule all:
